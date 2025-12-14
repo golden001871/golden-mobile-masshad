@@ -1,119 +1,200 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>GOLDEN MOBILE | آیفون کارکرده</title>
+  <title>Mr. Web | مستر وب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
     body {
-      font-family: Tahoma, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #222;
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #0d0d2b, #000);
       color: #fff;
-      padding: 20px;
       text-align: center;
     }
-    nav {
-      text-align: center;
-      background-color: #444;
-      padding: 10px;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .hero {
-      padding: 40px;
-      text-align: center;
-      background-color: #ffe082;
-    }
-    .products {
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #007BFF, #000);
+      border-radius: 50%;
+      margin: 30px auto 10px;
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
       justify-content: center;
-      gap: 20px;
-      padding: 30px;
-    }
-    .product {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      width: 250px;
-      padding: 15px;
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: auto;
-    }
-    footer {
-      background-color: #222;
+      font-size: 40px;
+      font-weight: bold;
       color: #fff;
-      text-align: center;
-      padding: 20px;
+      box-shadow: 0 0 20px #007BFF;
     }
-    .contact {
-      background: #f0f0f0;
-      padding: 20px;
-      text-align: center;
+
+    h1 {
+      font-size: 2em;
+      margin: 10px 0 30px;
     }
+
     .btn {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
+      margin: 12px 10px;
+      padding: 12px 28px;
+      font-size: 1em;
+      border-radius: 40px;
+      border: 2px solid #007BFF;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #007BFF;
+      color: #000;
+    }
+
+    .btn-social {
+      background-color: transparent;
+      border: 2px solid #007BFF;
+    }
+
+    .number-btn {
+      display: inline-block;
+      border: 2px solid #007BFF;
+      color: #fff;
+      margin: 10px;
+      padding: 10px 22px;
+      border-radius: 40px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .footer {
+      font-size: 0.9em;
+      color: #bbb;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .slide {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0d0d2b, #000);
+      z-index: 999;
+      overflow-y: auto;
+      padding: 40px 20px;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide h2 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+
+    .slide a {
+      display: block;
+      color: #00bfff;
+      margin: 15px 0;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid #007BFF;
+      border-radius: 40px;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>GOLDEN MOBILE</h1>
-  <p>پخش آیفون کارکرده در مشهد</p>
-</header>
+  <div class="logo">MW</div>
+  <h1>Mr. Web | مستر وب</h1>
 
-<nav>
-  <a href="#products">محصولات</a>
-  <a href="#contact">تماس با ما</a>
-  <a href="https://instagram.com/golden_mobile.mashhad" target="_blank">اینستاگرام</a>
-  <a href="https://t.me/golden_mobile_mashhad" target="_blank">تلگرام</a>
-</nav>
-
-<section class="hero">
-  <h2>به GOLDEN MOBILE خوش آمدید</h2>
-  <p>برترین مرکز پخش آیفون کارکرده با ضمانت و بهترین قیمت</p>
-</section>
-
-<section id="products" class="products">
-  <div class="product">
-    <img src="https://via.placeholder.com/250x200?text=iPhone+11" alt="iPhone">
-    <h3>iPhone 11</h3>
-    <p>64GB | تمیز | قیمت: تماس بگیرید</p>
-    <a class="btn" href="https://wa.me/989012405540" target="_blank">سفارش در واتساپ</a>
+  <div>
+    <a class="btn btn-social" href="https://wa.me/+989012405540" target="_blank">واتساپ</a>
+    <a class="btn btn-social" href="https://t.me/@hajidanial_2008" target="_blank">تلگرام</a>
+    <a class="btn btn-social" href="https://wa.me/+989012405540" target="_blank">مشاوره و خرید آنلاین</a>
+    <span class="btn" onclick="openSlide()">نمونه‌کارها</span>
   </div>
-  <div class="product">
-    <img src="https://via.placeholder.com/250x200?text=iPhone+X" alt="iPhone">
-    <h3>iPhone X</h3>
-    <p>256GB | سالم | قیمت: تماس بگیرید</p>
-    <a class="btn" href="https://wa.me/989012405540" target="_blank">سفارش در واتساپ</a>
+
+  <div>
+    <a class="number-btn" href="tel:+989012405540">+989012405540</a>
+    <a class="number-btn" href="tel:+989030302044">+989030302044</a>
   </div>
-  <!-- می‌تونی محصولات دیگه اضافه کنی -->
-</section>
 
-<section id="contact" class="contact">
-  <h2>تماس با ما</h2>
-  <p>شماره‌ها: <br> 09012405540 - 09158300037 - 05191001751</p>
-  <p>از طریق شبکه‌های اجتماعی هم در دسترس هستیم</p>
-</section>
+  <!-- بخش توضیحات اضافه شده -->
+  <div style="margin-top: 40px; padding: 0 20px;">
+    <h2 style="color: #00bfff; font-size: 24px;">چرا مستر وب؟</h2>
+    <p style="font-size: 16px; line-height: 1.8; max-width: 700px; margin: 10px auto;">
+      طراحی مدرن و واکنش‌گرا، تحویل سریع، پشتیبانی مداوم و مشاوره رایگان تنها بخشی از ویژگی‌های مستر وب است. 
+      ما تخصص داریم در طراحی سایت‌های شخصی، فروشگاهی و شرکتی با بهترین کیفیت و مناسب‌ترین قیمت.
+    </p>
 
-<footer>
-  <p>&copy; 2025 GOLDEN MOBILE - طراحی شده با کمک ChatGPT</p>
-</footer>
+    <h2 style="color: #00bfff; font-size: 24px; margin-top: 40px;">خدمات ما</h2>
+    <ul style="list-style: none; padding: 0; font-size: 16px;">
+      <li>✔ طراحی سایت شخصی، شرکتی و فروشگاهی</li>
+      <li>✔ چاپ کارت ویزیت اختصاصی و استند تبلیغاتی</li>
+      <li>✔ اتصال مستقیم واتساپ و تلگرام برای مشاوره</li>
+      <li>✔ ثبت دامنه و راه‌اندازی اولیه سایت</li>
+    </ul>
+  </div>
+<div style="margin-top: 60px; padding: 0 20px;">
+  <h2 style="color: #00bfff; font-size: 24px;">چه نوع سایت‌هایی طراحی می‌کنیم؟</h2>
+  <p style="font-size: 16px; line-height: 1.8; max-width: 700px; margin: 10px auto;">
+    در مستر وب، ما آماده‌ایم تا انواع مختلفی از وب‌سایت‌ها را بر اساس نیاز و هدف شما طراحی و پیاده‌سازی کنیم. برخی از محبوب‌ترین انواع سایت‌هایی که طراحی می‌کنیم:
+  </p>
+  <ul style="text-align: right; direction: rtl; max-width: 700px; margin: 0 auto; font-size: 16px; line-height: 2;">
+    <li><strong>سایت شخصی:</strong> مناسب برای رزومه آنلاین، نمونه‌کار هنرمندان، نویسندگان، فریلنسرها و مربیان.</li>
+    <li><strong>سایت فروشگاهی:</strong> جهت فروش آنلاین محصولات فیزیکی یا دیجیتال با قابلیت معرفی کالا، سبد خرید، و تماس مستقیم با فروشنده.</li>
+    <li><strong>سایت شرکتی:</strong> معرفی خدمات، پروژه‌ها، اعضای تیم و راه‌های ارتباطی برای شرکت‌ها، کارخانه‌ها و دفاتر خدماتی.</li>
+    <li><strong>سایت تبلیغاتی و کارت ویزیت دیجیتال:</strong> مخصوص معرفی سریع شما در یک صفحه، با لینک مستقیم به شبکه‌های اجتماعی.</li>
+    <li><strong>سایت خدماتی یا رزرو وقت:</strong> مناسب برای پزشکان، سالن‌های زیبایی، کلینیک‌ها و مشاوران با قابلیت نمایش زمان‌های آزاد.</li>
+    <li><strong>سایت آموزشی:</strong> برای ارائه دوره‌ها، مقالات، ویدیوهای آموزشی و دریافت بازخورد یا پرسش‌وپاسخ از کاربران.</li>
+  </ul>
+  <p style="font-size: 16px; line-height: 1.8; max-width: 700px; margin: 20px auto;">
+    هر سایت با طراحی اختصاصی، پشتیبانی کامل، قابلیت اتصال به واتساپ و شبکه‌های اجتماعی و بهینه‌سازی برای موبایل و گوگل ارائه می‌شود.
+  </p>
+</div>
+  <div class="footer">
+    مستر وب | طراح سایت‌های ساده، زیبا و حرفه‌ای برای شما<br>
+    تمامی حقوق محفوظ است - ۱۴۰۴
+  </div>
+
+  <!-- اسلاید نمونه‌کار -->
+  <div id="slideGallery" class="slide">
+    <div class="logo">MW</div>
+    <button class="close-btn" onclick="closeSlide()">بستن</button>
+    <h2>نمونه‌کارهای مستر وب</h2>
+    <a href="https://golden001871.github.io/golden.mobile_mashad/" target="_blank">گلدن موبایل</a>
+    <a href="https://otagh100.com/m/digicarte.php?Number=2088" target="_blank">کافه کوروش</a>
+    <a href="https://otagh100.com/m/digicarte.php?Number=2026" target="_blank">کباب سرای عالیجناب</a>
+    <a href="https://otagh100.com/m/digicarte.php?Number=74" target="_blank">مربی پرورش اندام</a>
+  </div>
+
+  <script>
+    function openSlide() {
+      document.getElementById('slideGallery').classList.add('active');
+    }
+
+    function closeSlide() {
+      document.getElementById('slideGallery').classList.remove('active');
+    }
+  </script>
 
 </body>
 </html>
